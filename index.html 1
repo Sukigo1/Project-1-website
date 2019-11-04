@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href="/normalize.css" rel="stylesheet"
+
+  <title> Suki Go </title>
+  <style>
+      header {
+        text-align:center;
+        color: white;
+      }
+      a {
+        color: white;
+      }
+      h1{
+        font-size: 70px;
+      }
+      ul {
+        padding: 10px;
+      }
+      <li> {
+        display:inline;
+        padding: 0px 10px 0px 10px;
+      }
+  </style>
+  </head>
+
+  <body>
+    <img src="/assests/anna.png">
+<header>
+    <h1>Welcome to my blog</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About me</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+</header>
+
+
+
+
+
+
+
+
+</body>
+</html>
