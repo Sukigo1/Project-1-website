@@ -1,0 +1,17 @@
+header {
+  text-align:center;
+  color: white;
+}
+a {
+  color: white;
+}
+h1{
+  font-size: 70px;
+}
+ul {
+  padding: 10px;
+}
+li {
+  display:inline;
+  padding: 0px 10px 0px 10px;
+}
