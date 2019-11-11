@@ -1,9 +1,9 @@
+
 header {
   text-align:center;
-  color: white;
 }
 a {
-  color: white;
+  color: rgb(65,75,86);
 }
 h1{
   font-size: 70px;
@@ -14,4 +14,14 @@ ul {
 li {
   display:inline;
   padding: 0px 10px 0px 10px;
+}
+body {
+  color: rgb(65,75,86);
+}
+img {
+  height: 200px;
+  width: 400px;
+}
+p{
+  text-align: center;
 }
