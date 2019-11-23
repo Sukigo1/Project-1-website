@@ -1,31 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+
+<body>
+ <div class="slideshow-container">
+
+  <div class="mySlides fade">
+   <div class="numbertext">1 / 5</div>
+    <img src="./imgs/woodland wide .jpeg" style="width:100%">
+ </div>
+
+ <div class="mySlides fade">
+   <div class="numbertext">2 / 5</div>
+    <img src="./imgs/polution wide.jpg" style="width:100%">
+ </div>
+
+ <div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+   <img src="./imgs/mountains wide.jpg" style="width:100%">
+ </div>
+
+  <div class="mySlides fade">
+   <div class="numbertext">4 / 5</div>
+    <img src="./imgs/clover wide.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+   <div class="numbertext">5 / 5</div>
+    <img src="./imgs/lake wide .jpeg" style="width:100%">
+  </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
+
+
+<head>
  <link href="./style.css" rel="stylesheet">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <title> Suki Go </title>
+  <title> Sustainability Leeds </title>
   </head>
-
   <body>
-
   <header>
     <div>
       <h1>Sustainability Leeds</h1>
-      <h2>HOW TO BE AN ENVIRONMENTALLY SUSTAINABLE STUDENT</h2>
-      <img src="./imgs/image92f52691-eb06-4ba8-9477-c57ad6a40832.jpg">
-      <img src="./imgs/how-did-plants-learn-to-communicate.jpg">
+      <h2>How to be an environmentally friendly student</h2>
+
     </div>
 
       <ul>
         <li><a href="home.html">Home</a></li>
-        <li><a href="aboutme.html">About me</a></li>
+        <li><a href="aboutme.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
   </header>
 
   <div>
-    <p> Contact us! </p>
+    <p> Contact  </p>
   </div>
   <div class="container">
    <form action="/action_page.php">
@@ -48,8 +115,23 @@
      <input type="submit" value="Submit">
    </form>
  </div>
-  <div>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+ <style>
+ .fa {
+   padding: 20px;
+   font-size: 30px;
+   width: 70px;
+   text-align: center;
+   text-decoration: none;
+   margin: 120px 100px;
+   border-radius: 70%;
+ }
+ </style>
+
   <div>
     <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
     <a href="https://twitter.com/" class="fa fa-twitter"></a>

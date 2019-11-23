@@ -1,63 +1,166 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+
+<body>
+ <div class="slideshow-container">
+
+  <div class="mySlides fade">
+   <div class="numbertext">1 / 6</div>
+    <img src="./imgs/woodland wide .jpeg" style="width:100%">
+ </div>
+
+ <div class="mySlides fade">
+   <div class="numbertext">2 / 6</div>
+    <img src="./imgs/polution wide.jpg" style="width:100%">
+ </div>
+
+ <div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+   <img src="./imgs/mountains wide.jpg" style="width:100%">
+ </div>
+
+  <div class="mySlides fade">
+   <div class="numbertext">4 / 5</div>
+    <img src="./imgs/clover wide.jpeg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+   <div class="numbertext">5 / 5</div>
+    <img src="./imgs/lake wide .jpeg" style="width:100%">
+  </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
+<head>
  <link href="./style.css" rel="stylesheet">
-
-  <title> Suki Go </title>
+  <title> Sustainability Leeds </title>
   </head>
-
-  <body>
-
+<body>
  <div class="w3-content" style="max-width:1400px">
-
   <header>
     <div>
       <h1>Sustainability Leeds</h1>
-      <h2>HOW TO BE AN ENVIRONMENTALLY SUSTAINABLE STUDENT</h2>
-      <img src="./imgs/image92f52691-eb06-4ba8-9477-c57ad6a40832.jpg">
-      <img src="./imgs/how-did-plants-learn-to-communicate.jpg">
+      <h2>How to be an environmentally friendly student</h2>
     </div>
+full page tabs:
+    <head>
+     <style>
+      * {box-sizing: border-box}
+      <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+      <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+      <button class="tablink" onclick="openPage('About', this, 'orange')">About  </button>
 
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="aboutme.html">About me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+
+
+    <div>
+     <id="navbar">
+      <a href="#home.html">Home</a>
+      <a href="#aboutme.html">About</a>
+      <a href="#contact.html">Contact</a>
+    </div>
   </header>
-
-
-
+</body>
+<br>
+</br>
 <div class=w3-col 18 s12">
   <div class= "w3-card-4 w3-margin w3-white">
     <img src="./imgs/GettyImages-565878653-5c32b51d46e0fb0001b3c3c2.jpg"
         <div class= "w3-container">
       <h3><b>Recycling</b></h3>
       <h5>Recycing properly in Leeds, <span class="w3-opacity">15th November, 2019</span></h5>
-    </div>
+  </div>
 
-    <div class="w3-container">
-      <p> Recycling varies from town to town which is why I wanna do a little breakdown for Leeds students.
+  <div class="w3-container">
+      <p> Recycling varies from town to town which is why I want to do a little breakdown for Leeds students...
           Our recycling facilities are quite poor within Hyde Park and Headingly,
-          but i think this is due to previous students disinteret in doing things properly- so lets change it!! </p>
-      <div class="w3-row">
+          this is due to previous students having little interest in doing things properly - so lets change it!!
+      </p>
+       <div class="w3-row">
         <div class="w3-col m8 s12">
           <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Read More </b></button></p>
         </div>
-        <div class= "w3-col m4 w3-hide-small">
+           <div class= "w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b>Comments </b> <span
             class="w3-badge">2</span></span></p>
-          </div>
+           </div>
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
 </body>
 </html>
