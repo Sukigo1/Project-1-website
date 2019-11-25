@@ -80,54 +80,6 @@ function showSlides() {
       <h1>Sustainability Leeds</h1>
       <h2>How to be an environmentally friendly student</h2>
     </div>
-full page tabs:
-    <head>
-     <style>
-      * {box-sizing: border-box}
-      <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-      <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-      <button class="tablink" onclick="openPage('About', this, 'orange')">About  </button>
-
-      <div id="Home" class="tabcontent">
-  <h3>Home</h3>
-  <p>Home is where the heart is..</p>
-</div>
-
-<div id="News" class="tabcontent">
-  <h3>News</h3>
-  <p>Some news this fine day!</p>
-</div>
-
-<div id="Contact" class="tabcontent">
-  <h3>Contact</h3>
-  <p>Get in touch, or swing by for a cup of coffee.</p>
-</div>
-
-<div id="About" class="tabcontent">
-  <h3>About</h3>
-  <p>Who we are and what we do.</p>
-</div>
-
-<script>
-function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-}
-document.getElementById("defaultOpen").click();
-</script>
-
-</body>
-
-
     <div>
      <id="navbar">
       <a href="#home.html">Home</a>
@@ -136,8 +88,8 @@ document.getElementById("defaultOpen").click();
     </div>
   </header>
 </body>
-<br>
-</br>
+
+<body>
 <div class=w3-col 18 s12">
   <div class= "w3-card-4 w3-margin w3-white">
     <img src="./imgs/GettyImages-565878653-5c32b51d46e0fb0001b3c3c2.jpg"
@@ -146,11 +98,12 @@ document.getElementById("defaultOpen").click();
       <h5>Recycing properly in Leeds, <span class="w3-opacity">15th November, 2019</span></h5>
   </div>
 
+
   <div class="w3-container">
       <p> Recycling varies from town to town which is why I want to do a little breakdown for Leeds students...
           Our recycling facilities are quite poor within Hyde Park and Headingly,
-          this is due to previous students having little interest in doing things properly - so lets change it!!
-      </p>
+          this is due to previous students having little interest in doing things properly - so lets change it!! </p>
+
        <div class="w3-row">
         <div class="w3-col m8 s12">
           <p><button class="w3-button w3-padding-large w3-white w3-border"><b>Read More </b></button></p>
@@ -162,5 +115,30 @@ document.getElementById("defaultOpen").click();
         </div>
       </div>
     </div>
-</body>
+  </body>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+    <style>
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 70px;
+      text-align: center;
+      text-decoration: none;
+      margin: 120px 100px;
+      border-radius: 70%;
+    }
+    </style>
+
+     <div>
+       <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+       <a href="https://twitter.com/" class="fa fa-twitter"></a>
+       <a href="https://www.google.com/" class="fa fa-google"></a>
+       <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+       <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+     </div>
 </html>
