@@ -166,7 +166,7 @@ p{
   text-align: center;
 }
 body {
-  background-color: rgb(255,244,190);
+  background-color: rgb(255,244,150);
 
 }
 
@@ -191,7 +191,7 @@ body {
 }
 
 .card {
-  background-color: rgb(255,244,150);
+  background-color: rgb(255,244,200);
   padding: 20px;
   margin-top: 20px;
 }
